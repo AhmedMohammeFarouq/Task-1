@@ -1,0 +1,89 @@
+/* Start Variables*/
+:root {
+    --main-color: #e6c521 ;
+    --letter-colors: #555;
+}
+/* End Variables*/
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+/* Small */
+@media (min-width: 750px ){
+    .services {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px ){
+    .services {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px ){
+    .services {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+.services {
+    padding-left: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(350px ,1fr) );
+}
+.page-title {
+    width: 300px;
+    min-width: 100%;
+    display:grid;
+    text-align: center;
+    justify-content: center;
+
+}
+.page-title h1 {
+    margin: 0px;
+    font-weight: 300;
+    margin-top: 150px;    
+}
+.page-title span {
+    background-color: var(--main-color);
+    margin-bottom: 30px;
+    height: 5px;
+    border-radius: 3px;
+    display: none;
+    transition: 0.5s;
+}
+.page-title:hover span {
+    display: block;
+}
+.services .feat i {
+    font-size: 70px;
+    color: var(--main-color);
+    border-radius: 50%;
+    position: relative;
+    left: -35%;
+    top:68% ;
+}
+/* This is hover to icon if you need it  */
+/* .services .feat i:hover {
+    background-color:#ffffff; 
+} */
+.services .feat {
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+}
+.services .feat h3 {
+    font-weight: 600; 
+    color: #333;
+}
+.services .feat p {
+    color: var(--letter-colors);
+}
